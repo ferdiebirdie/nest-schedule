@@ -8,6 +8,7 @@ export * from './decorators/use-locker.decorator';
 export * from './nest.schedule';
 export * from './nest-distributed.schedule';
 export * from './schedule';
+export * from './scheduler';
 export * from './schedule.module';
 export * from './interfaces/locker.interface';
 export * from './interfaces/global-config.interface';
