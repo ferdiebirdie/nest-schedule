@@ -14,6 +14,9 @@ const defaults_1 = require("./defaults");
 const constants_1 = require("./constants");
 const job_repeat_exception_1 = require("./exceptions/job-repeat.exception");
 class Scheduler {
+    static getJobs() {
+        return this.jobs;
+    }
     static queueJob(job) {
         const config = Object.assign({}, defaults_1.defaults, job.config);
         if (config.enable) {

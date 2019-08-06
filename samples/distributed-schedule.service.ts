@@ -1,10 +1,5 @@
 import { Injectable } from '@nestjs/common';
-import {
-  Interval,
-  Timeout,
-  Cron,
-  NestDistributedSchedule,
-} from 'nest-schedule';
+import { Interval, Timeout, Cron, NestDistributedSchedule } from '../dist';
 
 @Injectable()
 export class DistributedScheduleService extends NestDistributedSchedule {

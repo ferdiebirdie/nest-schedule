@@ -1,4 +1,4 @@
-import { InjectSchedule, Schedule } from 'nest-schedule';
+import { InjectSchedule, Schedule } from '../dist';
 import { Injectable, OnModuleInit } from '@nestjs/common';
 
 @Injectable()

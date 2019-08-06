@@ -1,5 +1,5 @@
 import { Injectable, OnModuleInit } from '@nestjs/common';
-import { Schedule, InjectSchedule } from 'nest-schedule';
+import { Schedule, InjectSchedule } from '../dist';
 
 @Injectable()
 export class DynamicScheduleService implements OnModuleInit {

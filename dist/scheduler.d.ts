@@ -3,6 +3,7 @@ import { IJobConfig } from './interfaces/job-config.interface';
 import { IJob } from './interfaces/job.interface';
 export declare class Scheduler {
   private static readonly jobs;
+  static getJobs(): Map<string, IJob>;
   static queueJob(job: IJob): void;
   static cancelJob(key: string): void;
   static scheduleCronJob(

@@ -12,6 +12,10 @@ import { JobRepeatException } from './exceptions/job-repeat.exception';
 export class Scheduler {
   private static readonly jobs = new Map<string, IJob>();
 
+  public static getJobs(): Map<string, IJob> {
+    return this.jobs;
+  }
+
   public static queueJob(job: IJob) {
     const config = Object.assign({}, defaults, job.config);
     if (config.enable) {
